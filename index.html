@@ -28,7 +28,7 @@
         </div>
         <ul class="nav-list">
           <li>
-            <a href="#welcome-section">About</a>
+            <a href="#welcome-section">Home</a>
           </li>
           <li>
             <a href="#projects">Work</a>
@@ -68,9 +68,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
               Katie
-              <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
@@ -84,9 +82,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
               MAKEmyDAY
-              <span class="code">&#47;&gt;</span>
             </p>
           </a>
           <a
@@ -100,9 +96,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
-              Pain Management
-              <span class="code">&#47;&gt;</span>
+             Pain Management
             </p>
           </a>
           <a
@@ -116,9 +110,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
-              Tableau
-              <span class="code">&#47;&gt;</span>
+              COVID-19 Data Visualization
             </p>
           </a>
           <a
@@ -132,9 +124,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
-              Water Ball
-              <span class="code">&#47;&gt;</span>
+              Water Ball Animation
             </p>
           </a>
           <a
@@ -148,9 +138,7 @@
               alt="project"
             />
             <p class="project-title">
-              <span class="code">&lt;</span>
-              Executive FUNction
-              <span class="code">&#47;&gt;</span>
+              Executive FUNction Game
             </p>
           </a>
         <a
@@ -164,9 +152,7 @@
             alt="project"
           />
           <p class="project-title">
-            <span class="code">&lt;</span>
             Craft & Drawing
-            <span class="code">&#47;&gt;</span>
           </p>
         </a>
       <a
@@ -180,9 +166,7 @@
           alt="project"
         />
         <p class="project-title">
-          <span class="code">&lt;</span>
           Photography
-          <span class="code">&#47;&gt;</span>
         </p>
       </a>
     <a
@@ -196,9 +180,7 @@
         alt="project"
       />
       <p class="project-title">
-        <span class="code">&lt;</span>
-        Soapy
-        <span class="code">&#47;&gt;</span>
+        Soapy Hand-Washing Droid
       </p>
     </a>
         </div>
@@ -354,11 +336,19 @@ ul {
   list-style: none;
 }
 
+h3 {
+  text-decoration: none;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  color: rgba(18,127,134,1);
+}
+
 a {
   text-decoration: none;
   font-family: Source Sans Pro;
   font-style: normal;
-  font-weight: normal;
   font-size: 30px;
   color: rgba(18,127,134,1);
 }
@@ -397,6 +387,7 @@ img {
 .nav-list {
   display: flex;
   margin-right: 2rem;
+  font-weight: 600;
 }
 
 @media (max-width: 28.75em) {
@@ -450,7 +441,7 @@ img {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 5rem 2rem;
   background: var(--main-white);
 }
 
@@ -470,9 +461,10 @@ img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
+  grid-gap: 3rem;
+  width: 95%;
   max-width: 1280px;
+  height:180%;
   margin: 0 auto;
   margin-bottom: 6rem;
 }
@@ -493,20 +485,26 @@ img {
   border-radius: 2px;
 }
 
-.code {
-  color: var(--main-lightblue);
+.project:hover {
+  transform: scale(1.01);
+}
+
+/* .code {
+  color: var(--main-white);
   transition: color 0.3s ease-out;
 }
 
 .project:hover .code {
   color: #ff7f50;
-}
+} */
 
 .project-image {
   height: calc(100% - 6.8rem);
   width: 100%;
   object-fit: cover;
 }
+
+
 
 .project-title {
   font-size: 2rem;
