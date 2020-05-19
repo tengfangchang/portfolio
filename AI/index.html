@@ -105,7 +105,6 @@ html {
   html {
     font-size: 58%;
   }
-  .maintitle{font-size: 50px;}
 }
 
 /* 460px / 16px = 28.75em */
@@ -113,8 +112,15 @@ html {
   html {
     font-size: 55%;
   }
-  .maintitle{font-size: 50px;}
 }
+
+/*mobile 375px / 16px = 23.43em */
+@media (max-width: 28.75em) {
+  html {
+    font-size: 40%;
+  }
+}
+
 
 /* Base styles */
 
@@ -194,9 +200,23 @@ img {
   justify-content: flex-end;
   position: fixed;
   top: 1rem;
-  left: 5rem;
+  left: 3rem;
   z-index: 10;
 }
+
+@media (max-width: 28.75em) {
+  .logo { 
+    width: 4rem;
+    height: 4rem;
+    top: 0.5rem;
+    left: 1rem;
+    }
+}
+
+.logo a:hover {
+  transform: scale(1.1) rotate(110deg);
+}
+
 
 
 
@@ -221,11 +241,10 @@ img {
 
 @media (max-width: 28.75em) {
   .nav {
-    justify-content: center;
+    background:rgba(172,227,232,1);
   }
-
   .nav-list {
-    margin: 0 1rem;
+    margin: 0 1rem; 
   }
 
 }
@@ -245,9 +264,6 @@ img {
 }
 
 
-.logo a:hover {
-  transform: scale(1.1) rotate(110deg);
-}
 
 /* Projects section */
 
